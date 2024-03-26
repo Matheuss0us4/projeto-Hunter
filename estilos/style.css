@@ -1,0 +1,183 @@
+
+@media(max-width: 1080px) {
+
+    body header {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header img {
+       margin: auto;
+    }
+
+
+    body main section#texto p {
+        width: 90%;
+        margin: 0px;
+        font-size: 12pt;
+    }
+
+    body header ul a {
+        margin: 8px;
+        padding: 3px 10px;
+        font-size: 12pt;
+        
+    }
+
+     main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+
+    body section#texto {
+        background: rgba(0, 0, 0, 0.723);
+    }
+    
+
+    body section#imagens {
+        background: rgba(0, 0, 0, 0.723);
+        width: 100%;
+    }  
+}
+
+@media(max-width: 485px) {
+
+
+    body section#imagens iframe {
+        width: 300px;
+        height: 170px
+    }
+}
+
+@media(max-width: 820px) {
+    body section  {
+        font-size: 20pt
+    }
+} 
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font: normal 16pt "Montserrat", sans-serif;
+}
+
+
+header {
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+   box-sizing: border-box;
+    
+}
+
+header img {
+    width: 200px;
+    padding: 10px;
+}
+
+header ul{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+
+header ul a {
+    margin: 12px;
+    padding: 5px 30px;
+    border-radius: 15px;
+    background: rgb(59, 59, 59);
+    text-decoration: none;
+    color: white;
+}
+
+header ul a:hover {
+    background: red;
+    transform: translate(-5px, -5px);
+    transition: .5s;
+}
+
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    background: url('imagens/background-hunter\ x\ hunter.jpg') top center no-repeat;
+    background-size: cover;
+}
+
+section {
+    display: flex;
+    align-items: center;
+}
+
+section#texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.836), rgba(0, 0, 0, 0.788), rgba(0, 0, 0, 0));
+}
+
+section#texto p {
+    margin: 20px;
+    padding: 20px;
+    backdrop-filter: blur(4px);
+    width: 400px;
+    background: rgba(31, 31, 31, 0.774);
+    color: white;
+}
+
+section#texto input {
+    width: 150px;
+    height: 40px;
+    margin: 20px;
+    font-size: 18pt;
+    border-radius: 20px;
+    background: rgb(170, 1, 1);
+    color: white;
+    border: none;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.678);
+}
+
+section#texto input:hover {
+    transform: translate(-5px, -5px);
+    transition: .5s;
+    background: red;
+    box-shadow: 7px 0px 12px 0px rgba(255, 0, 0, 0.678);
+}
+
+
+section#imagens {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.548), rgba(0, 0, 0, 0.829));
+}
+
+section#imagens iframe {
+   border: 3px solid orangered;
+   border-radius: 8px;
+   margin: 30px;
+   margin: 10px;
+}
+
+footer {
+    width: 100%; 
+    background: rgb(0, 0, 0);
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
